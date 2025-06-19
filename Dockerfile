@@ -1,0 +1,5 @@
+FROM itzg/minecraft-server
+
+ENV TYPE=FABRIC
+ENV VERSION=1.20.1
+ENV EULA=TRUE
