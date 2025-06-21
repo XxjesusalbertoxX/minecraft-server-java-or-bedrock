@@ -3,11 +3,11 @@ services:
     build: .
     container_name: mc-fabric
     ports:
-      - "25565:25565"
+      - "2005:25565"
     environment:
       EULA: "TRUE"
       TYPE: "FABRIC"
-      VERSION: "1.20.1"
+      VERSION: "1.21.1"
     volumes:
       - .:/data
     restart: unless-stopped
