@@ -9,5 +9,5 @@ services:
       TYPE: "FABRIC"
       VERSION: "1.21"
     volumes:
-      - .:/data
+      - ./data:/data
     restart: unless-stopped
