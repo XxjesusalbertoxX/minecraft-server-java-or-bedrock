@@ -44,10 +44,10 @@
 			invisible: true
 			invisible_until_tasks: 1
 			rewards: [{
-				id: "19324202817D4202"
+				id: "48EE3EE04EC87E0D"
 				item: {
 					count: 1
-					id: "minecraft:totem_of_undying"
+					id: "minecraft:lantern"
 				}
 				type: "item"
 			}]
@@ -131,7 +131,7 @@
 		}
 		{
 			dependencies: ["2958CA7FA6FD3E4F"]
-			hide: true
+			hide_until_deps_visible: true
 			icon: {
 				components: {
 					"ftbquests:icon": "minecraft:textures/gui/sprites/icon/search.png"

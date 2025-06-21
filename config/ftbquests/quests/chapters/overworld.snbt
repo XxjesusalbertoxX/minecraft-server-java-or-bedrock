@@ -11,6 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7CEC01561E744EFD"]
 			id: "405691D08E18B243"
 			rewards: [{
 				id: "2277B0E27893A120"
@@ -26,10 +27,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["7CEC01561E744EFD"]
 			id: "0CCC9DED48871D47"
 			rewards: [{
 				id: "64A97D9F4C655275"
@@ -46,9 +48,10 @@
 				value: 1L
 			}]
 			x: 0.5d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["7CEC01561E744EFD"]
 			id: "6F0A8B6DD645FE7C"
 			rewards: [{
 				id: "24ED0226D837A7F2"
@@ -65,9 +68,10 @@
 				value: 1L
 			}]
 			x: 2.5d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["7CEC01561E744EFD"]
 			id: "7D6D7B7DD55F344D"
 			rewards: [
 				{
@@ -95,9 +99,10 @@
 				value: 1L
 			}]
 			x: 4.5d
-			y: -1.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["7CEC01561E744EFD"]
 			id: "21BBC2B36580E236"
 			rewards: [{
 				count: 20
@@ -109,17 +114,69 @@
 				random_bonus: 10
 				type: "item"
 			}]
-			tasks: [{
-				advancement: "friendsandfoes:adventure/the_magicians"
-				criterion: ""
-				icon: {
-					id: "friendsandfoes:totem_of_illusion"
+			tasks: [
+				{
+					entity: "minecraft:evoker"
+					id: "7FD8AFB6CA8BC384"
+					type: "kill"
+					value: 1L
 				}
-				id: "15D53F3294C6D247"
-				type: "advancement"
+				{
+					entity: "minecraft:illusioner"
+					id: "163DA114132CDFFC"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "frostiful:frostologer"
+					id: "5983C9B6A3CEB62A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CEC01561E744EFD"]
+			id: "3EBB93F5103DC38F"
+			rewards: [{
+				count: 4
+				id: "76E529F11EE159D8"
+				item: {
+					count: 1
+					id: "minecraft:iron_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "40A5404491616B14"
+				item: { count: 1, id: "inmis:frayed_backpack" }
+				type: "item"
 			}]
 			x: 2.5d
-			y: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "7CEC01561E744EFD"
+			rewards: [{
+				count: 2
+				id: "652DDD8D43058F4E"
+				item: {
+					count: 1
+					id: "minecraft:oak_log"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "11BEA03A82966C5B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
 		}
 	]
 }

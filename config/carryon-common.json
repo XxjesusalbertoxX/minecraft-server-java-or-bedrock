@@ -85,6 +85,7 @@
       "minecraft:cake",
       "minecraft:nether_portal",
       "minecraft:tall_seagrass",
+      "minecraft:spawner",
       "animania:block_trough",
       "animania:block_invisiblock",
       "colossalchests:*",
@@ -185,8 +186,8 @@
       "quark:totem",
       "vehicle:*",
       "minecraft:villager",
-      "endgoblintraders:end_goblin_trader", 
-      "goblintraders:vein_goblin_trader", 
+      "endgoblintraders:end_goblin_trader",
+      "goblintraders:vein_goblin_trader",
       "goblintraders:goblin_trader",
       "universal_graves:*"
     ],

@@ -20,6 +20,7 @@
   "chatlogSaveInterval": 0,
   "chatHidePacket": false,
   "chatWidth": 0,
+  "chatHeight": 0,
   "chatMaxMessages": 16384,
   "chatNameFormat": "\u003c$\u003e",
   "chatNameColor": 16777215,

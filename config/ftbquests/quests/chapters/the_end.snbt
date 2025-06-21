@@ -7,19 +7,11 @@
 		id: "minecraft:end_portal_frame"
 	}
 	id: "4B174BB2FDFE4D4F"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			id: "2C23A9F30CBE3F4E"
-			rewards: [{
-				id: "4B034F4B316EFC20"
-				item: {
-					count: 1
-					id: "betterend:guidebook"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: {
@@ -63,10 +55,13 @@
 				xp_levels: 20
 			}]
 			tasks: [{
-				advancement: "adventurez:the_eye_advancement"
-				criterion: ""
-				id: "33E926906B6796F0"
-				type: "advancement"
+				entity: "adventurez:the_eye"
+				icon: {
+					id: "minecraft:ender_eye"
+				}
+				id: "76779F3D4B6F5DA8"
+				type: "kill"
+				value: 1L
 			}]
 			x: 2.5d
 			y: -0.5d
@@ -98,13 +93,13 @@
 				}
 			]
 			tasks: [{
-				advancement: "adventurez:void_shadow_advancement"
-				criterion: ""
+				entity: "adventurez:void_shadow"
 				icon: {
-					id: "minecraft:dragon_egg"
+					id: "fwaystones:local_void"
 				}
-				id: "2A2B668B1E7B490E"
-				type: "advancement"
+				id: "6DEF0FE733FAAE9B"
+				type: "kill"
+				value: 1L
 			}]
 			x: 4.0d
 			y: -0.5d

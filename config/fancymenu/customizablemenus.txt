@@ -27,9 +27,6 @@ net.minecraft.class_4288 {
 com.blamejared.controlling.client.NewKeyBindsScreen {
 }
 
-com.bisecthosting.mods.bhmenu.modules.servercreatorbanner.screens.BHMultiplayerScreen {
-}
-
 net.minecraft.class_407 {
 }
 
@@ -91,6 +88,9 @@ net.minecraft.class_429 {
 }
 
 net.minecraft.class_481 {
+}
+
+com.bisecthosting.mods.bhmenu.modules.servercreatorbanner.screens.BHMultiplayerScreen {
 }
 
 net.minecraft.class_436 {
