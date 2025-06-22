@@ -9,6 +9,7 @@ services:
       TYPE: "FORGE"
       VERSION: "1.20.1"
       FORGEVERSION: "47.4.0"
+      MEMORY: "6G"
     volumes:
       - ./:/data
     restart: unless-stopped
