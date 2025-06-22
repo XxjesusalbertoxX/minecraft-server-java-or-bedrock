@@ -9,7 +9,21 @@ services:
       TYPE: "FORGE"
       VERSION: "1.20.1"
       FORGEVERSION: "47.4.0"
-      MEMORY: "6G"
+      MEMORY: "10G"
+      JVM_XX_OPTS: >
+        -XX:+UseG1GC
+        -XX:+ParallelRefProcEnabled
+        -XX:MaxGCPauseMillis=100
+        -XX:+UnlockExperimentalVMOptions
+        -XX:+DisableExplicitGC
+        -XX:+AlwaysPreTouch
+        -XX:G1HeapRegionSize=8M
+        -XX:G1ReservePercent=20
+        -XX:G1MixedGCCountTarget=4
+        -XX:InitiatingHeapOccupancyPercent=15
+        -XX:G1MixedGCLiveThresholdPercent=90
+        -XX:G1RSetUpdatingPauseTimePercent=5
+        -Dusing.aikars.flags=true
     volumes:
       - ./:/data
     restart: unless-stopped
