@@ -9,7 +9,7 @@ services:
       TYPE: "FORGE"
       VERSION: "1.20.1"
       FORGEVERSION: "47.4.0"
-      MEMORY: "10G"
+      MEMORY: "8G"
       JVM_XX_OPTS: >
         -XX:+UseG1GC
         -XX:+ParallelRefProcEnabled
@@ -27,7 +27,12 @@ services:
         -XX:SurvivorRatio=32
         -XX:+PerfDisableSharedMem
         -Dusing.aikars.flags=true 
-
     volumes:
       - ./:/data
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "mc-health"]
+      interval: 1m
+      timeout: 10s
+      retries: 10
+      start_period: 5m
